@@ -8,6 +8,7 @@ packages:
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
 - name: SSL_JDBC_Test
+  version: "1.0"
   gitServerName: SIQAPsurGit
   gitUrl: https://github.com/prabhakarsag
   gitUsername: prabhakarsag
@@ -17,10 +18,22 @@ services:
   packages:
   - name: SIQA_1803_1Project
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.siqa_1803_1.integrations:AlertsCRTandERT
   packages:
   - name: SIQA_1803_1Project
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: pub.alert:emit
   packages:
   - name: WmPublic
@@ -29,10 +42,40 @@ services:
   packages:
   - name: SIQA_1803_1Project
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.siqa_1803_1.integrations:SSL_JDBC_test
+  packages:
+  - name: SIQA_1803_1Project
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: SSL_JDBC_Test.services:insert_ssl
+  packages:
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.siqa_1803_1.integrations:Sum
   packages:
   - name: SIQA_1803_1Project
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: pub.math:addInts
   packages:
   - name: WmPublic
