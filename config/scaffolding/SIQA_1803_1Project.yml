@@ -12,6 +12,14 @@ services:
   packages:
   - name: SIQA_1803_1Project
     version: "1.0"
+- serviceName: project.siqa_1803_1.integrations:AlertsCRTandERT
+  packages:
+  - name: SIQA_1803_1Project
+    version: "1.0"
+- serviceName: pub.alert:emit
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2043
 - serviceName: project.siqa_1803_1.integrations:SIQAAdapterFlow
   packages:
   - name: SIQA_1803_1Project
