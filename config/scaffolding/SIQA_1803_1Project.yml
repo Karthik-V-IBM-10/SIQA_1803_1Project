@@ -16,3 +16,15 @@ services:
   packages:
   - name: SIQA_1803_1Project
     version: "1.0"
+- serviceName: project.siqa_1803_1.integrations:Sum
+  packages:
+  - name: SIQA_1803_1Project
+    version: "1.0"
+- serviceName: pub.math:addInts
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2043
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2043
